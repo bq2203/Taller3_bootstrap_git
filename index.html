@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" alt="Favicon" href="assets/img/logo.png" type="image/x-icon">
+    <meta name="author" content="Braian Quintero">
+    <meta name="description" content="Taller 2 de Maquetación web">
+    <meta name="keywords" content="TALLER, taller, Taller">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-traslucent">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+  .nav-item{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .bi bi-house, .bi bi-file-earmark-text-fill, .bi bi-headset{
+    font-size: 25px;
+    padding-right: 5px;
+  }
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-house"></i>Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-file-earmark-text-fill"></i>Carpeta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-headset"></i>Soporte</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+           Acceder
+          </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/img-1.jpg" alt="foto1" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/img-2.webp" alt="foto2" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/img-3.webp" alt="foto3" class="d-block w-100">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+
+        <!--SECCIÓN 1: JUMBOTRON (Bootstrap)-->
+        <div class="p-5 mb-4 bg-dark text-white" style="background-color: #496989 !important;">
+          <div class="container-fluid py-5 text-center">
+            <h1 class="display-5 fw-bold">⚽ Copa Mundial de Fútbol 2026</h1>
+            <p class="col-md-8 fs-4 mx-auto">El torneo más grande del mundo llega a Estados Unidos, Canadá y México. 48 selecciones. 104 partidos. Una sola gloria.</p>
+            <button class="btn btn-warning btn-lg" type="button">Ver más información</button>
+          </div>
+        </div>
+
+
+        <!-- SECCIÓN 2: CARDS (Bootstrap)-->
+        <section style="background-color: #adc1d5 !important;padding: 20px; padding-top: 20px"> 
+
+        <div class="container my-5">
+          <h2 class="text-center mb-4">Principales Sedes</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="assets/img/img-4.webp" class="card-img-top" alt="MetLife Stadium">
+                <div class="card-body">
+                  <h5 class="card-title">MetLife Stadium</h5>
+                  <p class="card-text">Nueva York / Nueva Jersey, EE.UU. Sede de la gran final del Mundial 2026. Capacidad para 82.500 espectadores.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="badge text-bg-warning">Final 2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="assets/img/img-5.jpg" class="card-img-top" alt="Estadio Azteca">
+                <div class="card-body">
+                  <h5 class="card-title">Estadio Azteca</h5>
+                  <p class="card-text">Ciudad de México, México. Único estadio en albergar dos finales mundialistas: 1970 y 1986.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="badge text-bg-success">Historia viva</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="assets/img/img-6.jpg" class="card-img-top" alt="BC Place">
+                <div class="card-body">
+                  <h5 class="card-title">BC Place</h5>
+                  <p class="card-text">Vancouver, Canadá. Estadio moderno de techo retráctil en la ciudad más verde del torneo.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="badge text-bg-primary">Canadá 2026</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <!-- SECCIÓN 3: LIST GROUP (Bootstrap) -->
+        <section style="background-color: #496989 !important;padding: 20px; padding-top: 20px">
+        <div class="container my-5" >
+          <h2 class="text-center mb-4">Campeones del Mundo</h2>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              🇧🇷 Brasil
+              <span class="badge text-bg-warning rounded-pill">5 títulos</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              🇩🇪 Alemania
+              <span class="badge text-bg-secondary rounded-pill">4 títulos</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              🇮🇹 Italia
+              <span class="badge text-bg-secondary rounded-pill">4 títulos</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              🇦🇷 Argentina
+              <span class="badge text-bg-info rounded-pill">3 títulos</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              🇫🇷 Francia
+              <span class="badge text-bg-primary rounded-pill">2 títulos</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              🇺🇾 Uruguay
+              <span class="badge text-bg-primary rounded-pill">2 títulos</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              🇪🇸 España
+              <span class="badge text-bg-danger rounded-pill">1 título</span>
+            </li>
+          </ul>
+        </div>
+        </section>
+
+        <!-- SECCIÓN 4: ACCORDION (Bootstrap)-->
+        <section style="background-color: #768da4 !important;padding: 20px; padding-top: 20px">
+        <div class="container my-5">
+          <h2 class="text-center mb-4">Historia de los Mundiales</h2>
+          <div class="accordion" id="accordionMundiales">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#colapso1" aria-expanded="true" aria-controls="colapso1">
+                  🏆 Uruguay 1930 — El primer Mundial
+                </button>
+              </h2>
+              <div id="colapso1" class="accordion-collapse collapse show" data-bs-parent="#accordionMundiales">
+                <div class="accordion-body">
+                  <div class="row align-items-center g-3">
+                    <div class="col-md-3">
+                      <img src="assets/img/img-7.jpg" class="img-fluid rounded" alt="Uruguay 1930">
+                    </div>
+                    <div class="col-md-9">
+                      La primera Copa del Mundo se celebró en Uruguay en 1930 con 13 selecciones. El anfitrión se coronó campeón derrotando a Argentina 4-2 en la final en el Estadio Centenario de Montevideo.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapso2" aria-expanded="false" aria-controls="colapso2">
+                  🌟 México 1970 — El mejor Mundial de la historia
+                </button>
+              </h2>
+              <div id="colapso2" class="accordion-collapse collapse" data-bs-parent="#accordionMundiales">
+                <div class="accordion-body">
+                  <div class="row align-items-center g-3">
+                    <div class="col-md-3">
+                      <img src="assets/img/img-8.jpg" class="img-fluid rounded" alt="Brasil 1970">
+                    </div>
+                    <div class="col-md-9">
+                      Brasil con Pelé arrasó a todos sus rivales con un fútbol espectacular. Se consagró campeón y se quedó definitivamente con la Copa Jules Rimet al ser su tercer título mundial.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapso3" aria-expanded="false" aria-controls="colapso3">
+                  ⭐ Qatar 2022 — La final más emocionante
+                </button>
+              </h2>
+              <div id="colapso3" class="accordion-collapse collapse" data-bs-parent="#accordionMundiales">
+                <div class="accordion-body">
+                  <div class="row align-items-center g-3">
+                    <div class="col-md-3">
+                      <img src="assets/img/img-9.jpg" class="img-fluid rounded" alt="Qatar 2022">
+                    </div>
+                    <div class="col-md-9">
+                      Argentina de la mano de Lionel Messi conquistó su tercera estrella en una final épica contra Francia que terminó 3-3 y se definió en penales. Messi finalmente levantó el único título que le faltaba.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </section>
+
+        <!-- SECCIÓN 5: TABLE (Bootstrap)-->
+        <section style="background-color: #496989 !important;padding: 20px; padding-top: 20px">
+        <div class="container my-5">
+          <h2 class="text-center mb-4">Grupos del Mundial 2026</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+              <thead class="table-dark">
+  <tr>
+    <th scope="col">Grupo</th>
+    <th scope="col">Selección 1</th>
+    <th scope="col">Selección 2</th>
+    <th scope="col">Selección 3</th>
+    <th scope="col">Selección 4</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <th scope="row">A</th>
+    <td>🇲🇽 México</td>
+    <td>🇿🇦 Sudáfrica</td>
+    <td>🇰🇷 Corea</td>
+    <td>🇨🇿 Chequia</td>
+  </tr>
+  <tr>
+    <th scope="row">B</th>
+    <td>🇨🇦 Canadá</td>
+    <td>🇧🇦 Bosnia</td>
+    <td>🇶🇦 Qatar</td>
+    <td>🇨🇭 Suiza</td>
+  </tr>
+  <tr>
+    <th scope="row">C</th>
+    <td>🇧🇷 Brasil</td>
+    <td>🇲🇦 Marruecos</td>
+    <td>🇭🇹 Haití</td>
+    <td>SCO Escocia</td>
+  </tr>
+  <tr>
+    <th scope="row">D</th>
+    <td>🇺🇸 EE.UU.</td>
+    <td>🇵🇾 Paraguay</td>
+    <td>🇦🇺 Australia</td>
+    <td>🇹🇷 Turquía</td>
+  </tr>
+  <tr>
+    <th scope="row">E</th>
+    <td>🇩🇪 Alemania</td>
+    <td>🇨🇼 Curazao</td>
+    <td>🇨🇮 C. de Marfil</td>
+    <td>🇪🇨 Ecuador</td>
+  </tr>
+  <tr>
+    <th scope="row">F</th>
+    <td>🇳🇱 Países Bajos</td>
+    <td>🇯🇵 Japón</td>
+    <td>🇸🇪 Suecia</td>
+    <td>🇹🇳 Túnez</td>
+  </tr>
+  <tr>
+    <th scope="row">G</th>
+    <td>🇧🇪 Bélgica</td>
+    <td>🇪🇬 Egipto</td>
+    <td>🇮🇷 Irán</td>
+    <td>🇳🇿 N. Zelanda</td>
+  </tr>
+  <tr>
+    <th scope="row">H</th>
+    <td>🇪🇸 España</td>
+    <td>🇨🇻 Cabo Verde</td>
+    <td>🇸🇦 Arabia S.</td>
+    <td>🇺🇾 Uruguay</td>
+  </tr>
+  <tr>
+    <th scope="row">I</th>
+    <td>🇫🇷 Francia</td>
+    <td>🇸🇳 Senegal</td>
+    <td>🇮🇶 Irak</td>
+    <td>🇳🇴 Noruega</td>
+  </tr>
+  <tr>
+    <th scope="row">J</th>
+    <td>🇦🇷 Argentina</td>
+    <td>🇩🇿 Argelia</td>
+    <td>🇦🇹 Austria</td>
+    <td>🇯🇴 Jordania</td>
+  </tr>
+  <tr>
+    <th scope="row">K</th>
+    <td>🇵🇹 Portugal</td>
+    <td>🇨🇩 RD Congo</td>
+    <td>🇺🇿 Uzbekistán</td>
+    <td>🇨🇴 Colombia</td>
+  </tr>
+  <tr>
+    <th scope="row">L</th>
+    <td>ENG Inglaterra</td>
+    <td>🇭🇷 Croacia</td>
+    <td>🇬🇭 Ghana</td>
+    <td>🇵🇦 Panamá</td>
+  </tr>
+</tbody>
+            </table>
+          </div>
+        </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+     crossorigin="anonymous"></script>
+</body>
+</html>
