@@ -29,6 +29,13 @@
 <style>
     .nav-item{ font-size: 20px; padding: 10px; }
     .bi{ font-size: 25px; padding-right: 5px; }
+    /* Estilos para embellecer las tarjetas usando utilidades de Bootstrap */
+    .card { overflow: hidden; }
+    .card.bg-gradient { background-image: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02)); }
+    .card .card-header { display: flex; align-items: center; gap: .5rem; font-weight: 600; font-size: 1.05rem; }
+    .card .list-group-item { background: transparent; border: 0; padding-left: 0.9rem; padding-right: 0.9rem; }
+    .card.shadow-sm { transition: transform .18s ease, box-shadow .18s ease; }
+    .card.shadow-sm:hover { transform: translateY(-6px); box-shadow: 0 .8rem 2rem rgba(0,0,0,.18); }
 </style>
 <body>
         <header>
@@ -68,70 +75,62 @@
             <h1 class="mb-4">Guía GitHub ADSO — Resumen rápido</h1>
 
             <div class="d-flex flex-column gap-3">
-                <div class="card w-100 text-white bg-primary">
-                    <div class="card-header">Cuadro 1 — Estructura</div>
+                <div class="card w-100 text-white bg-primary bg-gradient shadow-sm rounded-4 border-0">
+                    <div class="card-header">Paso 1 — Verificar la instalacion del git</div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Campo 1: ---</li>
-                        <li class="list-group-item">Campo 2: ---</li>
-                        <li class="list-group-item">Campo 3: ---</li>
-                        <li class="list-group-item">Campo 4: ---</li>
-                        <li class="list-group-item">Campo 5: ---</li>
+                        <li class="list-group-item">git --version</li>
                     </ul>
                 </div>
 
-                <div class="card w-100 text-white bg-success">
-                    <div class="card-header">Cuadro 2 — Comandos Git</div>
+                <div class="card w-100 text-white bg-success bg-gradient shadow-sm rounded-4 border-0">
+                    <div class="card-header">Paso 2 — Configurar tu identidad</div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Comando 1: ---</li>
-                        <li class="list-group-item">Comando 2: ---</li>
-                        <li class="list-group-item">Comando 3: ---</li>
-                        <li class="list-group-item">Comando 4: ---</li>
-                        <li class="list-group-item">Comando 5: ---</li>
-                        <li class="list-group-item">Comando 6: ---</li>
+                        <li class="list-group-item">git config --global user.name "Tu Nombre"</li>
+                        <li class="list-group-item">git config --global user.email "tu.email@example.com"</li>
                     </ul>
                 </div>
 
-                <div class="card w-100 bg-warning">
-                    <div class="card-header">Cuadro 3 — Ramas</div>
+                <div class="card w-100 bg-warning bg-gradient shadow-sm rounded-4 border-0">
+                    <div class="card-header">Paso 3 — Inicializar proyecto local</div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Item 1: ---</li>
-                        <li class="list-group-item">Item 2: ---</li>
-                        <li class="list-group-item">Item 3: ---</li>
-                        <li class="list-group-item">Item 4: ---</li>
-                        <li class="list-group-item">Item 5: ---</li>
+                        <li class="list-group-item">cd ruta/a/tu/proyecto</li>
+                        <li class="list-group-item">git init</li>
                     </ul>
                 </div>
 
-                <div class="card w-100 bg-info">
-                    <div class="card-header text-dark">Cuadro 4 — GitHub Pages</div>
+                <div class="card w-100 bg-info bg-gradient shadow-sm rounded-4 border-0">
+                    <div class="card-header text-dark">Paso 4 — Agregar archivos y commit</div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Nota 1: ---</li>
-                        <li class="list-group-item">Nota 2: ---</li>
-                        <li class="list-group-item">Nota 3: ---</li>
-                        <li class="list-group-item">Nota 4: ---</li>
-                        <li class="list-group-item">Nota 5: ---</li>
+                        <li class="list-group-item">git add .</li>
+                        <li class="list-group-item">git commit -m "first commit"</li>
                     </ul>
                 </div>
 
-                <div class="card w-100 bg-light">
-                    <div class="card-header">Cuadro 5 — Evaluación</div>
+                <div class="card w-100 bg-light bg-gradient shadow-sm rounded-4 border-0">
+                    <div class="card-header">Paso 5 — Crear un repositorio en GitHub</div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Punto 1: ---</li>
-                        <li class="list-group-item">Punto 2: ---</li>
-                        <li class="list-group-item">Punto 3: ---</li>
-                        <li class="list-group-item">Punto 4: ---</li>
-                        <li class="list-group-item">Punto 5: ---</li>
+                        <li class="list-group-item">Inicia sesion en GitHub</li>
+                        <li class="list-group-item">Haz clic en "New repository"</li>
+                        <li class="list-group-item">Ingresa un nombre para el repositorio</li>
+                        <li class="list-group-item">Selecciona "Initialize this repository with a README"</li>
+                        <li class="list-group-item">Haz clic en "Create repository"</li>
                     </ul>
                 </div>
 
-                <div class="card w-100 text-white bg-secondary">
-                    <div class="card-header">Cuadro 6 — Referencias</div>
+                <div class="card w-100 text-white bg-secondary bg-gradient shadow-sm rounded-4 border-0">
+                    <div class="card-header">Paso 6 — Conectar el proyecto local con el repositorio en GitHub</div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Referencia 1: ---</li>
-                        <li class="list-group-item">Referencia 2: ---</li>
-                        <li class="list-group-item">Referencia 3: ---</li>
-                        <li class="list-group-item">Referencia 4: ---</li>
-                        <li class="list-group-item">Referencia 5: ---</li>
+                        <li class="list-group-item">git remote add origin https://github.com/tuusuario/nombre-del-repositorio.git</li>
+                        <li class="list-group-item">git branch -M main</li>
+                        <li class="list-group-item">git push -u origin main</li>
+                    </ul>
+                </div>
+
+                <div class="card w-100 bg-warning bg-gradient shadow-sm rounded-4 border-0">
+                    <div class="card-header">Paso 7 — Publicar proyecto</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">git push</li>
+
                     </ul>
                 </div>
             </div>
